@@ -14,9 +14,9 @@ from airflow.sensors.external_task import ExternalTaskSensor
 # Email configuration
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SENDER_EMAIL = "gokulbalaji2408@gmail.com"
+SENDER_EMAIL = "please put your email address"
 APP_PASSWORD = "change this with your email token(16 digit), mine works"  
-RECIPIENT_EMAIL = "gokulbalaji2408@gmail.com"
+RECIPIENT_EMAIL = "please put your email address"
 
 def send_email(message):
     """Send email using SMTP with App Password"""
