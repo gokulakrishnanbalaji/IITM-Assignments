@@ -1,0 +1,23 @@
+# Base configuration for Google News Scraper
+scraper:
+  base_url: "https://news.google.com"
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  top_stories_pattern: "Top stories"
+
+database:
+  dbname: "gokul"
+  user: "gokul"
+  password: "4861"
+  host: "localhost"
+  port: 5432
+
+output:
+  log_file: "scraper.log"
+  images_folder: "images"
+
+deduplication:
+  methods: ["headline", "url", "content_similarity"]
+  similarity_threshold: 0.85
+
+pipeline:
+  frequency: 3600  # Run every hour (in seconds)
